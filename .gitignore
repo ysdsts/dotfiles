@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# yazi 動的データ
+yazi/.config/yazi/bookmarks.tsv
+
+# tmux プラグイン（TPM が自動インストール）
+tmux/.config/tmux/plugins/
+

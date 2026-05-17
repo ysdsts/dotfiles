@@ -1,0 +1,39 @@
+[[mgr.prepend_keymap]]
+on = "<Enter>"
+run = "plugin smart-enter"
+
+[[mgr.prepend_keymap]]
+on   = "p"
+run  = "plugin smart-paste"
+desc = "Paste into the hovered directory or CWD"
+
+# ---- Bookmarks (bm.yazi) ----
+# m<key>  : カレントディレクトリをブックマーク登録
+# '<key>  : キー指定でジャンプ (ya.which 一覧から選択)
+# bl      : fzf でブックマーク一覧表示→選択ジャンプ
+# bd      : ブックマーク削除
+# bD      : 全ブックマーク削除
+[[mgr.prepend_keymap]]
+on   = "m"
+run  = "plugin bm save"
+desc = "Save bookmark"
+
+[[mgr.prepend_keymap]]
+on   = "'"
+run  = "plugin bm jump"
+desc = "Jump to bookmark"
+
+[[mgr.prepend_keymap]]
+on   = [ "b", "l" ]
+run  = "plugin bm list"
+desc = "List bookmarks (fzf)"
+
+[[mgr.prepend_keymap]]
+on   = [ "b", "d" ]
+run  = "plugin bm delete"
+desc = "Delete bookmark"
+
+[[mgr.prepend_keymap]]
+on   = [ "b", "D" ]
+run  = "plugin bm delete_all"
+desc = "Delete all bookmarks"

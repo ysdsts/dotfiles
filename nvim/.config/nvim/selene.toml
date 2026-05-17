@@ -1,0 +1,14 @@
+[rules]
+std = "neovim"
+global_usage = "warn"
+if_same_then_else = "warn"
+incorrect_standard_library_use = "warn"
+mixed_table = "warn"
+multiple_statements = "warn"
+undefined_variable = "warn"
+unused_variable = "warn"
+
+[globals]
+vim = true
+Snacks = true
+

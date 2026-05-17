@@ -1,0 +1,27 @@
+window-save-state = always
+
+keybind = super+shift+o=reload_config
+
+background-opacity = 1
+background-blur = 0
+
+theme = Catppuccin Mocha
+
+font-family = MoralerspaceNeonHWNF
+font-size = 14
+
+window-padding-x = 8
+window-padding-y = 8
+
+# block | bar | underline
+cursor-style = block
+shell-integration-features = no-cursor
+
+# 点滅: true | false
+cursor-style-blink = false
+
+# フォーカス外しのときカーソルを枠線表示にする
+# cursor-invert-fg-bg = false
+
+unfocused-split-opacity = 1
+split-divider-color = #8A8A8A

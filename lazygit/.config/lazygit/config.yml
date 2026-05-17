@@ -1,0 +1,41 @@
+gui:
+  nerdFontsVersion: "3"
+  theme:
+    activeBorderColor:
+      - "#cba6f7"
+      - bold
+    inactiveBorderColor:
+      - "#585b70"
+    selectedLineBgColor:
+      - "#313244"
+    cherryPickedCommitBgColor:
+      - "#45475a"
+    cherryPickedCommitFgColor:
+      - "#cba6f7"
+    unstagedChangesColor:
+      - "#f38ba8"
+os:
+  editPreset: "nvim"
+git:
+  pagers:
+    - colorArg: always
+      pager: delta --paging=never
+  autoFetch: true
+  autoRefresh: true
+  fetchAll: true
+  commit:
+    signOff: false
+refresher:
+  refreshInterval: 10
+  fetchInterval: 60
+customCommands:
+  - key: "<c-p>"
+    command: "git push --force-with-lease origin HEAD"
+    context: "localBranches"
+    description: "Force push with lease"
+    loadingText: "Force pushing..."
+  - key: "R"
+    command: "git rebase -i origin/main"
+    context: "localBranches"
+    description: "Interactive rebase onto origin/main"
+    output: terminal
